@@ -1,0 +1,360 @@
+/* Tipografias */
+
+    /* TITULOS */
+    @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap');
+    /* font-family: 'Rajdhani', sans-serif; */
+
+    /* PARRAFOS */
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Rajdhani:wght@500&display=swap');
+    /* font-family: 'Oxygen', sans-serif; */
+
+    /* Botones - Indices */
+    @import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Oxygen&family=Rajdhani:wght@500&display=swap');
+    /* font-family: 'Exo 2', sans-serif; */
+
+/* Variables */
+:root{
+    --color1:#F1F6F9;
+    --color1menos: #f1f6f94f;
+    --color1fo: #f1f6f9b9;
+    --color2:#394867;
+    --color3:#212A3E;
+    --color4:#9BA4B5;
+    --color4menos: #9ba4b581;
+    --tituloprincipal:52px;
+    --titulos: 48px;
+    --parrafos: 26px;
+    --indice: 22px;
+
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: bold;
+}
+     
+
+/* Header */
+header{
+    background: #F1F6F9;
+    max-width: 1920px;
+}
+
+.barra{
+    background: transparent;
+}
+
+.logo{
+    font-size: var(--titulos);
+    font-family: 'Exo 2', sans-serif;
+    text-decoration: none;
+    color: var(--color3);
+
+}
+
+.nav-item{
+    font-size: var(--indice);
+    color: var(--color3);
+    padding: 10px 25px;
+}
+
+#linea{
+    height: 3px;
+    width: 90%;
+    background: var(--color3);
+    margin: 0 auto;
+}
+
+.hero{
+    padding: 5%;
+}
+
+#perfil{
+    display: flex;
+}
+
+#perfil img{
+    width: 70%;
+    margin: 3% auto;
+}
+
+#info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1%;
+}
+
+#info h1{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: var(--tituloprincipal)
+}
+
+#info ul{
+    list-style: none;
+    font-size: var(--parrafos);
+    font-family: 'Oxygen', sans-serif;
+    padding: 0;
+    margin: 4% 0;
+
+}
+
+#info button{
+    background: var(--color2);
+    font-size: var(--parrafos);
+    border: none;
+    color: var(--color1);
+    cursor: pointer;
+    margin: 0 auto;
+    width: 80%;
+    height: 20%;
+    align-self: center;
+    margin-top: 10px;
+
+}
+
+#redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#github{
+    width: 32%;
+    margin: 5%;
+    
+}
+
+#linkedin{
+    width: 32%;
+    min-width: 80px;
+    margin: 5%;
+}
+
+/* Main */
+main{
+    background: var(--color2);
+    max-width: 1920px;
+    margin: 0 auto;
+    border: none;
+    box-shadow: none;
+}
+
+.ppro{
+    padding: 5%;
+}
+
+.columnap h2{
+    color: var(--color1);
+    font-size: var(--titulos);
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+}
+
+.l2{
+    height: 3px;
+    width: 50%;
+    background: var(--color1);
+    margin: 0 auto;
+}
+
+.columnap p{
+    text-align: center;
+    background: var(--color1menos);
+    color: #000;
+    border-radius: 15px;
+    font-size: var(--parrafos);
+    padding: 3%;
+    margin: 2% 4%;
+}
+
+.columnaimg{
+    display: flex;
+    justify-content: center;
+    padding:2%;
+}
+
+.estudios{
+    background: var(--color1);
+    width: 100%;
+    padding: 5%;
+}
+
+.estudios h2{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: var(--titulos);
+}
+
+
+.columnaest{
+    display: flex;
+    border: 1px solid #000;
+    background: var(--color4menos);
+    margin: 1.5% 0;
+    padding: 1%;
+    border-radius: 15px;
+    align-items: center;
+    
+}
+
+.columnaest p{
+    font-family: 'Oxygen', sans-serif;
+    font-size: var(--parrafos);
+    padding-left: 2%;
+    
+}
+
+#medio{
+    margin-left: 10%;
+}
+
+.proyectos{
+    padding: 5%;
+}
+
+.proyectos h2{
+    font-size: var(--titulos);
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+    color: var(--color1);
+}
+
+.carousel {
+    margin: 2% auto;
+    width: 75%;
+    max-width: 1500px;
+    
+    
+}
+
+.carousel-caption{
+    border-radius: 10px;
+    background: var(--color1fo);
+}
+
+.carousel-item img {
+    max-width: 100%; 
+    height: auto;
+}
+
+.carousel-item h5{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: var(--titulos);
+    font-style: inherit;
+    color: var(--color3);
+}
+
+.carousel-item p{
+    color: var(--color3);
+    font-family: 'Oxygen', sans-serif;
+    font-size: var(--parrafos);
+
+}
+
+
+
+
+.habilidades{
+    background: var(--color1);
+    width: 100%;
+    padding: 5%;
+}
+
+.l3{
+    height: 3px;
+    width: 50%;
+    background: var(--color3);
+    margin: 1% auto;
+    
+}
+
+.habilidades h2{
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+    font-size: var(--titulos);
+    color: #212A3E;
+}
+
+.columnahab{
+    padding: 2%;
+    text-align: center;
+}
+
+.columnahab h3{
+    font-size: var(--titulos);
+    font-family: 'Exo 2', sans-serif;
+    margin: 8% 0;
+    color: var(--color3)
+
+}
+
+
+.experiencia{
+    padding: 5%;
+
+}
+
+.experiencia h2{
+    padding-left: 1%;
+}
+
+.experiencia h2, h3{
+    font-size: var(--titulos);
+    color: var(--color1);
+    font-family: 'Rajdhani', sans-serif;
+
+}
+
+.linexp{
+    margin: 4% 0; 
+}
+
+.columnaexp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.columnexp h3{
+    font-size: var(--titulos);
+    font-family: 'Exo 2', sans-serif;
+    margin: 8% 0;
+    text-decoration: dotted;
+}
+
+.columnaexp p{
+    font-size: var(--parrafos);
+    color: var(--color1);
+}
+
+#l4{
+    width: 15%;
+    height: 3px;
+    background: var(--color1);
+    
+}
+
+.gr{
+    border: 2px solid #F1F6F9;
+    border-radius: 10px;
+    padding: 1%;
+
+}
+
+/* Footer */
+footer{
+    background: var(--color1);
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+footer p{
+    text-align: center;
+    font-size: var(--parrafos);
+    font-family: 'Oxygen', sans-serif;
+    padding: 1% 0;
+    margin: 0;
+}
