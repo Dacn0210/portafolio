@@ -13,9 +13,9 @@
         <nav class="navbar navbar-expand-lg barra">
             <div class="container">
 
-              <a class="logo" href="index.html">DACN</a>
+              <a class="logo" href="index.html" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Este es el acronimo de mi nombre :D">DACN</a>
                 
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler" id="boton-menu" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               
@@ -77,7 +77,7 @@
       <section class="container-fluid ppro" #id="perpro">
 
         <div class="row">
-            <div class="col columnap" data-aos="fade-up" data-aos-duration="1500">
+            <div class="col columnap" id="txtppro" data-aos="fade-up" data-aos-duration="1500">
               <h2>Perfil Profesional</h2>
               <div class="l2"></div>
               <p>Soy una persona comprometida que está cursando una tecnología en análisis y desarrollo de software. Estoy buscando la oportunidad de unirme a una compañía para poner en práctica y aprovechar mis habilidades en programación, con la meta de convertirme en un ingeniero en sistemas y programador full stack. Estoy interesado en formar parte de una compañía donde pueda desarrollar mis habilidades y comprometerme plenamente en los proyectos en los que participe. Mi objetivo es crecer profesionalmente y contribuir de manera significativa en el campo de la programación.</p>
@@ -87,15 +87,15 @@
 
         <div class="row">
             <div class="col-lg-4 col-md-6 columnaimg" data-aos="fade-up" data-aos-duration="1500">
-              <img src="img/pcengranaje.svg" alt="">
+              <button type="button" class="btn btn-secondary boton" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Enfoque e interes en distintos campos de la programación."><img src="img/pcengranaje.svg" alt="" class="imgper"></button>
             </div>
 
             <div class="col-lg-4 col-md-6 columnaimg" data-aos="fade-up" data-aos-duration="1500">
-              <img src="img/engranaje.svg" alt="">
+              <button type="button" class="btn btn-secondary boton" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Rapida adaptabilidad a nuevos grupos de trabajo, en constante busqueda mejora grupal."><img src="img/engranaje.svg" alt="" class="imgper"></button>
             </div>
 
-            <div class="col-lg-4 columnaimg" data-aos="fade-up" data-aos-duration="1500">
-              <img src="img/subir.svg" alt="">
+            <div class="col-lg-4  columnaimg" data-aos="fade-up" data-aos-duration="1500">
+              <button type="button" class="btn btn-secondary boton text-lg" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Aspiraciones a ascender posiciones en una compañia y superarse tanto laboral como personalmente."><img src="img/subir.svg" alt="" id="imgper"></button>
             </div>
         </div>
         
@@ -191,25 +191,25 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 columnahab" data-aos="fade-up" data-aos-duration="1500">
-            <h3>80%</h3>
+            <h3>70%</h3>
             <img src="img/python.svg" alt="">
             <h3>Python</h3>
           </div>
 
           <div class="col-lg-3 col-md-6 columnahab" data-aos="fade-down" data-aos-duration="1500">
-            <h3>70%</h3>
+            <h3>50%</h3>
             <img src="img/c++.svg" alt="">
             <h3>C++</h3>
           </div>
           
           <div class="col-lg-3 col-md-6 columnahab" data-aos="fade-up" data-aos-duration="1500">
-            <h3>50%</h3>
+            <h3>20%</h3>
             <img src="img/csharp.svg" alt="">
             <h3>C#</h3>
           </div>
           
           <div class="col-lg-3 col-md-6 columnahab" data-aos="fade-down" data-aos-duration="1500">
-            <h3>20%</h3>
+            <h3>80%</h3>
             <img src="img/postgre.svg" alt="">
             <h3>PostgreSQL</h3>
           </div>
@@ -255,7 +255,7 @@
     </main>
 
     <footer >
-      <div data-aos="fade-down" data-aos-duration="1500">
+      <div data-aos="fade-down" data-aos-duration="1500" id="pie">
         <p><strong>Diego Alejandro Castillo Niño</strong>
           <br>Septiembre - 2023
           <br>SENA - ADSO 2617515
@@ -268,6 +268,14 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+      const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
     </script>
     <script src="js/main.js"></script>
   </body>
